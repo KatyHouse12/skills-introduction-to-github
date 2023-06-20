@@ -1,0 +1,140 @@
+TYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Alice in Wonderland</title>
+    <style>
+     body {
+        background: url("https://www.wallpaperflare.com/static/907/219/783/mad-hatter-alice-through-the-looking-glass-johnny-depp-mad-wallpaper.jpg") center / cover no-repeat fixed;  
+        background-size: cover;
+        border-radius: 5px;
+        height: 600px;
+        width: 600px;
+        margin: 60px auto;
+        padding: 1rem;
+      }
+      .frame {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 50px;
+        background: rgb(217, 233, 247, 0.5);
+        border-radius: 25px;
+      }
+     h1 {
+        text-align: center;
+        color:rgb(70, 1, 70);
+        font-weight: bold;
+        line-height: 30px;
+        font-size: 30px; 
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-stretch: expanded;
+     }  
+     h2 {
+        text-align: center;
+        color: rgb(49, 59, 54);
+        font-weight: bold;
+        line-height: 20px;
+        font-size: 15px;
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+     }
+     img {
+        display: block;
+        margin: 0 auto;
+        padding: 30px;
+        max-width: 100%;
+        border-radius: 15px;
+     }
+     p {
+        text-align: justify;
+        line-height: 1.5;
+        font-size: 20px;
+        margin: 20px 0 10px;
+        padding: 30px;
+        font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     }
+     button {
+        display: block;
+        margin:  10px auto;
+        color: rgb(246, 239, 29);
+        background: rgb(245, 110, 8);
+        font-size: 20px;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 1px 3px rgba(245, 179, 93, 0.3);
+        transition: all 200ms ease-in-out;
+        transition:all 2s linear;
+        opacity: 1;
+     }
+     button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+
+     }
+     .Learn-more {
+      display: block;
+      margin: 10px;
+      text-decoration: none;
+      color: rgb(129, 24, 117);
+      font-size: 20px;
+     }
+     .Learn-more:hover {
+        text-decoration: underline;
+     }
+     .footer {
+        text-align: center;
+     }
+      a {
+        color:rgb(106, 52, 223);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="frame">
+    <h1>
+    "Alice's Adventures in Wonderland"
+    </h1>
+     <h2>
+    British children's book by Lewis Carroll
+     </h2>
+     <hr/>
+<img 
+src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781684123230/once-upon-a-story-alices-adventures-in-wonderland-9781684123230_hr.jpg" alt="Alice's Adventures in Wonderland"
+width="200"
+/>
+    <hr/>
+<p>
+    <strong>Alice's Adventures in Wonderland </strong> (commonly Alice in Wonderland) is an 1865 English novel by Lewis Carroll, a mathematics professor at Oxford University.   
+   It details the story of a young girl named Alice who falls through a rabbit hole into a fantasy world of anthropomorphic creatures. It is seen as an example of the literary nonsense genre. The artist John Tenniel provided 42 wood-engraved illustrations for the book. 
+  <br /> 
+  <a href="https://en.wikipedia.org/wiki/Alice%27s_Adventures_in_Wonderland" 
+  target="_blank" 
+  class="Learn-more"
+   >
+    Learn more on Wikipedia
+  </a>
+</p>
+<button>
+Buy a book <a href="https://www.amazon.nl/Alice-Wonderland-Original-Complete-Illustrations/dp/B0948LPG76/ref=asc_df_B0948LPG76/?tag=nlshogostdde-21&linkCode=df0&hvadid=572427278156&hvpos=&hvnetw=g&hvrand=14090807201212010036&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=1010751&hvtargid=pla-1318478759884&psc=1" target="_blank">
+</a>
+</button>
+<p class="footer">
+This page was built by <a href="https://www.linkedin.com/in/ekaterina-beznosova-5a3ba01a2/" target="_blank">
+    Ekaterina Beznosova
+</a>
+</p>
+</div>
+    <script>
+        function buy() {
+            let name = prompt("What is your name?");
+            let character = prompt("Who is your favorite character?");
+            if (name.length > 0 || character.length > 0) {
+            alert("Thank you" + " " + name + " " + ", we like" + " " + character + " " + "too!😻");
+        }
+    }
+     let button = document.querySelector("button");
+     button.addEventListener("click", buy);   
+    </script>
+  </body>
+</html>
